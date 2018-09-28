@@ -9,6 +9,6 @@ This currently requires PHP for keeping api keys secure and sending commands to 
 ## config.php
 Be sure to create a config.php in the root with the folling:
 
-`<?php
+```<?php
 
-$apikey = 'Your api key here';`
+$apikey = 'Your api key here';```
