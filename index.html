@@ -1,0 +1,89 @@
+<html>
+<script type="text/javascript" src="lib/jquery/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="lib/anyflex/js/data.js"></script>
+<script type="text/javascript" src="lib/pusher/pusher.min.js"></script>
+
+<script type="text/javascript" src="js/formatting.js"></script>
+<script type="text/javascript" src="js/AnimateNumber.js"></script>
+<script type="text/javascript" src="js/bitcoin.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/markets.js"></script>
+<script type="text/javascript" src="js/portfolio.js"></script>
+<script type="text/javascript" src="/js/graph.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+<link rel="stylesheet" href="css/css.css">
+<title></title>
+
+<body>
+
+	<div id="fullscreengraph"></div>
+
+	<div id="portfolio_container" style="position: fixed; left: 0px; right: 0px; top: 0px; display: flex; align-items: flex-start; justify-content: baseline; flex-direction: row; padding: 10px; flex-wrap: wrap;">
+	</div>
+
+	<div style="position: fixed; min-width: 75%; right: 0px; bottom: 0px; display: flex; align-items: center; justify-content: space-evenly; flex-direction: row;">		
+
+		<div class="pair">
+			<div class="header">SATOSHIS</div>
+			<div class="number smaller" name="satoshis">-</div>
+		</div>			
+
+		<div class="pair">
+			<div class="header">BITCOIN</div>
+			<div class="number smaller" name="bitcoin_1">-</div>
+		</div>
+
+		<div class="pair">
+			<div class="header">VALUE</div>
+			<div class="number smaller" name="bitcoin_price">-</div>
+		</div>
+
+	</div>
+
+	<!--
+	<div id="buy_or_sell" style="display: none; position: fixed; left: 0px; top: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.5);">
+
+		<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+
+			<div style="background-color: rgba(255, 255, 255, 0.9); padding: 15px; border-radius: 3px;">
+
+				Available: <span data="available"></span>
+				<br/>
+
+				<input placeholder="Amount"/>
+
+				<button>Sell</button>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	-->
+
+	<modal id="buy_or_sell" style="display: none; position: fixed;">
+
+		<input style="width: 150px; text-align: right;" data="available" placeholder="Amount"/><togglebutton name="max">Max</togglebutton>
+		<!-- <button style="width: 75px;">All</button> -->
+		<br/>
+
+		<input style="width: 150px; text-align: right;" data="at" placeholder="At"/>
+		<!-- <button style="width: 75px;" onclick="current();">Current</button> -->
+		<br/>
+
+		<buttons>
+			
+			<button class="buy" onclick="buy();">Buy</button>
+			<button class="sell" onclick="sell();">Sell</button>
+		</buttons>
+	</modal>
+
+</body>
+
+</html>
+	

@@ -1,0 +1,200 @@
+*::selection {
+	background-color: transparent;
+}
+
+
+body {
+
+	background:
+
+		linear-gradient(
+		rgba(0, 0, 0, 0.1), 
+		rgba(0, 0, 0, 1)
+		),
+		
+		url('../images/p2pbg.jpg');
+
+	background-size: cover;
+	cursor: default;
+}
+
+#fullscreengraph {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+
+.header {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 20px;
+	letter-spacing: 10px;
+	color: #A0A0A0;
+	/* text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1); */
+	text-align: center;
+	margin-right: -9px;
+}
+
+.header.narrow {
+	
+	margin-right: 0px;
+	letter-spacing: 0px;
+}
+
+.number {
+	/*  */
+	/* font-family: 'Share Tech Mono', monospace; */
+
+	font-family: 'Share Tech Mono', monospace;
+	color: #A0B0C0;
+	
+	transition: color 2s;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.smaller {
+	font-size: 30px;
+	margin: 0px;
+}
+
+.tiny {
+	font-size: 25px;
+	margin: 0px;	
+}
+
+.pair {
+	margin: 10px;
+}
+
+.up {
+	color: #50F060;
+	transition: color 2s;
+}
+
+.down {
+	color: #F06050;
+	transition: color 2s;
+}
+
+currency, modal {
+	display: block;
+	position: relative;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+	margin: 2px;
+	padding: 10px;
+	overflow: hidden;
+	cursor: pointer;
+
+	font-family: 'Roboto Condensed', sans-serif;	
+}
+
+currency:hover {
+	background-color: rgba(225, 225, 255, 0.9);
+}
+
+.empty {
+	display: none;
+}
+
+title {
+	display: inline;
+	font-size: 20px;
+	color: black;
+	line-height: 20px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+value {
+	margin: 4px 0px 0px 5px;
+	float: right;
+	color: #707070;
+	font-size: 13px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+total {
+	display: block;
+	font-size: 16px;
+	color: #707070;
+	text-align: right;
+}
+
+current {
+	color: #707070;
+	font-size: 16px;
+	font-family: 'Share Tech Mono', monospace;
+	transition: color 2s;
+	display: block;
+
+	text-align: right;
+}
+
+buy, sell {
+	display: block;
+	color: rgb(66, 212, 110);
+	font-size: 16px;
+	font-family: 'Share Tech Mono', monospace;
+	transition: color 2s;
+	display: block;
+	text-align: right;
+	cursor: pointer;	
+}
+
+sell {
+	color: #c03535;
+}
+
+sell:hover, buy:hover {
+	text-decoration: underline;
+}
+
+buttons {
+	margin-top: 5px;
+}
+
+input, button, togglebutton {
+	border: none;
+	padding: 10px;
+	outline: none;
+	background-color: #F0F0F0;
+	margin: 1.5px;
+	font-family: 'Roboto Condensed', sans-serif;	
+	font-size: 16px;
+}
+
+input::selection {
+	background-color: rgba(100, 200, 255, 0.7);
+}
+
+input {
+	box-shadow: inset 0px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+button, togglebutton {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(225,235, 245,1) 100%), #FFFFFF;
+	box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+
+}
+
+togglebutton.toggle {
+	background-color: #DDFFDD;
+}
+
+button:active {
+	position: relative;
+	top: 1px;
+}
+
+.buy {
+	background-color: #EEFFEE;
+}
+
+.sell {
+	background-color: #FFEEEE;
+}
